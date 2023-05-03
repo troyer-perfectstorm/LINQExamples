@@ -47,8 +47,9 @@ namespace LINQExamples.Intro
 
             // Without LINQ
             var manualResult = new List<int>();
-            foreach (var score in scores)
+            for (int i = 0; i < scores.Length; i++)
             {
+                int score = scores[i];
                 if (score > 80)
                 {
                     manualResult.Add(score);
@@ -81,7 +82,7 @@ namespace LINQExamples.Intro
             var resultFromMethod = scores.Where(score => score > 80);
 
             Console.WriteLine("Results from Method syntax");
-            foreach (var result in resultFromQuery)
+            foreach (var result in resultFromMethod)
             {
                 Console.WriteLine(result);
             }

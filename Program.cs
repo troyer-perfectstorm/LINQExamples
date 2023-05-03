@@ -1,4 +1,5 @@
-﻿using LINQExamples.Intro;
+﻿using BenchmarkDotNet.Running;
+using LINQExamples.Intro;
 using LINQExamples.Using;
 
 namespace LINQExamples
@@ -7,12 +8,14 @@ namespace LINQExamples
     {
         static void Main(string[] args)
         {
-            new Intro1_WhatIsLINQ().TwoFormatsOfLINQ();
-            new Intro2_WhatIsIEnumerable().TestCustomEnumerable();
-            new Intro3_WhatIsAMonad().TestMonad();
+            //new Intro1_WhatIsLINQ().TwoFormatsOfLINQ();
+            //new Intro2_WhatIsIEnumerable().TestCustomEnumerable();
+            //new Intro3_WhatIsAMonad().TestMonad();
 
-            new Use1_Basic();
-            new Use2_Advanced();
+            //new Use1_Basic();
+            //new Use2_Advanced();
+
+            //BenchmarkRunner.Run<PerformanceTest>();
         }
     }
 }
